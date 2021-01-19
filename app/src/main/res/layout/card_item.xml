@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+
+        android:id="@+id/my_reserve_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/my_reserve_department"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/fontColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="神经外科"
+            android:textSize="24sp"
+            android:layout_toRightOf="@+id/reserve_img"/>
+
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/reserve_doctor_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_reserve_department"
+            android:src="@drawable/doc_small"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/my_reserve_doctor"
+            android:layout_toRightOf="@id/reserve_doctor_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_reserve_department"
+            tools:text="姜业鑫 主任医师"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/reserve_calendar"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reserve_doctor_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reserve_calendar"/>
+
+        <TextView
+            android:id="@+id/reserve_date"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reserve_calendar"
+            android:layout_below="@id/reserve_doctor_small"
+            tools:text="2020-12-14"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="5dp"
+            android:id="@+id/reserve_payment_img"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reserve_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reserve_payment_situation"/>
+
+        <TextView
+            android:id="@+id/reserve_payment"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reserve_calendar"
+            android:layout_below="@id/reserve_calendar"
+            tools:text="未支付"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:typeface="serif"
+
+            android:id="@+id/Cancel_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/shape_cornor"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/reserve_date"
+            android:text="取消"
+            android:textSize="24sp"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:id="@+id/pay_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reserve_date"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@+id/reserve_id"
+            android:background="@drawable/shape_cornor"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            tools:text="支付"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+
+
+        <TextView
+            android:id="@+id/reserve_id"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/fontColor"
+            android:textSize="24sp"
+            tools:text="序号：1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

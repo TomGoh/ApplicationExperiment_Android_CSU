@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tom.patientservice.UI.Profile.ProfileFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp">
+
+    <RelativeLayout
+        android:id="@+id/profile_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notLogin"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            app:layout_constraintVertical_bias="0.003" />
+
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/notLogin"
+            android:layout_marginLeft="50dp"
+            android:text="请点击头像登录"
+            android:layout_centerVertical="true"
+            android:textSize="24sp"
+            android:textColor="@color/fontColor" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/profile_menu"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView0"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_menu_reserve"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/reserve_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_reserve"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/reserve_img"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:text="我的预约"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/reserve_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_arrow"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_below="@+id/cardView0"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp">
+
+        <RelativeLayout
+
+            android:id="@+id/profile_menu_balance"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/balance_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_balance"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/balance_img"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:text="我的账户"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/balance_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_arrow"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            app:cardCornerRadius="8dp"
+            android:layout_below="@+id/cardView9"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_menu_profile"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_profile"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/profile_img"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:text="我的信息"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/information_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_arrow"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/cardView8"
+            android:id="@+id/cardView7"
+            app:cardCornerRadius="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp">
+
+        <RelativeLayout
+            android:id="@+id/profile_menu_password"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/password_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_password"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/password_img"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/fontColor"
+                android:textSize="24sp"
+                android:text="更改密码"/>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/changePassword_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_arrow"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintVertical_bias="0.86">
+
+        <Button
+            android:id="@+id/LogOutButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="注销登录" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

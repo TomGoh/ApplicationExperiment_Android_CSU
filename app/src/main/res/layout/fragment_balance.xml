@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/balance_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/balance_logo"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/balance_large"/>
+
+        <TextView
+            android:id="@+id/account_title"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/balance_logo"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/fontColor"
+            android:text="我的账户" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:typeface="serif"
+            android:id="@+id/balance_quantity"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_below="@id/account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:text="￥1500.00"/>
+
+        <Button
+            android:id="@+id/money_button"
+            android:layout_marginTop="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/balance_quantity"
+            android:text="充值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <!-- 第一层 -->
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+            <corners
+                android:bottomLeftRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:topLeftRadius="6dp"
+                android:topRightRadius="6dp" />
+        </shape>
+    </item>
+    <!-- 第二层 -->
+    <item android:top="13dp">
+        <shape>
+            <solid android:color="#DCDCDC" />
+        </shape>
+    </item>
+    <!-- 第三层 -->
+    <item android:top="12dp"
+        android:bottom="0.7dp">
+        <shape>
+            <solid android:color="@color/white" />
+            <padding
+                android:left="6dp"
+                android:top="6dp"
+                android:right="6dp"
+                android:bottom="6dp"/>
+        </shape>
+    </item>
+
+</layer-list>

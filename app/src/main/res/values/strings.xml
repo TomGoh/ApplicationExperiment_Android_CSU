@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">PatientService</string>
+    <string name="demo_info_text">Warning: \n\nFor demonstration purpose, the assembling and signing of the request parameters are done on the client side.\nHowever, in practice, both assembling and signing MUST BE carried out on the server side.</string>
+    <string name="pay_with_alipay">Pay with Alipay</string>
+    <string name="pay_with_alipay_hk">Pay with AlipayHK</string>
+    <string name="auth_with_alipay">Authenticate with Alipay</string>
+    <string name="web_to_native">Call Alipay from Web Content</string>
+    <string name="check_sdk_version">Alipay SDK Version</string>
+    <string name="pay_success">Payment success:</string>
+    <string name="auth_failed">Authentication failed:</string>
+    <string name="error_missing_appid_rsa_private">Error: Missing \"APPID\" or \"RSA_PRIVATE\" in PayDemoActivity.</string>
+    <string name="error_missing_hk_partner_seller_rsa_private">Error: Missing \"PARTNER\", \"SELLER\", or \"RSA_PRIVATE\\ in OrderUtils1_0_HK.</string>
+    <string name="pay_result">Payment result:</string>
+    <string name="error_auth_missing_partner_appid_rsa_private_target_id">Error: Missing \"PARTNER\", \"APP_ID\", \"RSA_PRIVATE\", or \"TARGET_ID\" in PayDemoActivity.</string>
+    <string name="confirm">Confirm</string>
+    <string name="pay_failed">Payment failed:</string>
+    <string name="auth_success">Authentication success:</string>
+    <string name="alipay_sdk_version_is">"Alipay SDK version: "</string>
+    <string name="error_missing_h5_pay_url">Missing URL to load. Please configure in PayDemoActivity.h5Pay()</string>
+    <string name="error">Error</string>
+    <string name="pay_cross_border">Cross-border Pay with Alipay</string>
+    <string name="error_missing_global_partner_seller_rsa_private" >Error: Missing \"PARTNER\", \"SELLER\", or \"RSA_PRIVATE\\ in OrderUtils1_0_Global.</string>
+    <string name="payment_inst_hk">Payer: HK</string>
+    <string name="payment_inst_cn">Payer: CN</string>
+    <string name="SJWK">神经外科（Neurosurgery）是外科学中的一个分支，是在外科学以手术为主要治疗手段的基础上，应用独特的神经外科学研究方法，研究人体神经系统以及与之相关的附属机构的损伤、炎症、肿瘤、畸形和某些遗传代谢障碍或功能紊乱疾病,并探索新的诊断、治疗、预防技术的一门高、精、尖学科。</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="SJNK">神经内科是研究神经系统疾病、骨骼肌疾病的临床医学，主要通过内科手段进行研究。疾病种类有脊髓、脑血管疾病，中枢神经系统感染、脱髓鞘性疾病，运动障碍疾病，癫痫，头痛，变性疾病，神经系统遗传性疾病等。</string>
+    <string name="XWK">胸外科是一门医学专科，专门研究胸腔内器官，主要指食道、肺部、纵隔病变的诊断及治疗，乳腺外科领域也被归入这个专科，其中又以肺外科和食道外科为主。</string>
+    <string name="ERK">儿科是全面研究小儿时期身心发育、保健以及疾病防治的综合医学科学。凡涉及儿童和青少年时期的健康与卫生问题都属于儿科范围。其医治的对象处于生长发育期。儿科学的任务是不断探索儿科医学理论，在实践的基础降低发病率、死亡率，增强儿童和青少年体质，提高儿童青少年保健和疾病防治水平。</string>
+    <string name="ERBHK">耳鼻喉科学是一门医学专科，专门研究耳、鼻、喉病变的诊断及治疗，近来除了颅骨、脑部及牙齿以外的头颈部外科领域也被归入这个专科。耳、鼻、喉是头颅内三个相连的器官，由于这个部位的病变都会相互影响，所以常集中一起研究。耳鼻喉科一般包含了医师、护士、语言治疗师以及听力师。</string>
+    <string name="XXGK">心血管内科，即心内科，是各级医院大内科为了诊疗心血管血管疾病而设置的一个临床科室，治疗的疾病包括心绞痛、高血压、猝死、心律失常、心力衰竭、早搏、心律不齐、心肌梗死、心肌病、心肌炎、急性心肌梗死等心血管疾病。</string>
+    <string name="ZLK">肿瘤科和内科、外科、妇产科和儿科一样，是临床医学的二级学科，分为肿瘤内科、肿瘤放射治疗科和肿瘤外科等，肿瘤内科主要从事各种良、恶性肿瘤的内科治疗；肿瘤放射治疗科主要从事肿瘤的放射线治疗；肿瘤外科提供以手术为主的综合治疗。</string>
+    <string name="XHNK">消化内科是研究食管、胃、小肠、大肠、肝、胆及胰腺等疾病为主要内容的临床三级学科。消化内科疾病种类繁多，医学知识面广，操作复杂而精细。</string>
+</resources>
